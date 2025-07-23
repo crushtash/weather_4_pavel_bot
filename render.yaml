@@ -4,4 +4,5 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python weather_4_pavel_bot.py
-    runtime: python311
+    environment:
+      PYTHON_VERSION: 3.11.9
