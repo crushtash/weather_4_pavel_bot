@@ -9,14 +9,14 @@ from telegram.ext import Updater, CommandHandler, CallbackContext, MessageHandle
 from telegram.utils.request import Request
 
 # 🔐 ТВОИ КЛЮЧИ
-BOT_TOKEN = os.getenv('8108864169:AAHb60EKiSOciXlbfDBb_TqbgB5TvhDpxDA')
-YANDEX_API_KEY = os.getenv('eff98d34-1d10-4310-bae4-28ebe67ca86e')
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+YANDEX_API_KEY = os.getenv('YANDEX_API_KEY')
 LATITUDE = 55.7734
 LONGITUDE = 37.6218
 
 # chat_id — ВСТАВЬ СВОИ
-PASHAS_CHAT_ID = int(os.getenv('462259835'))
-YOUR_CHAT_ID = int(os.getenv('88380260'))
+PASHAS_CHAT_ID = int(os.getenv('PASHAS_CHAT_ID'))
+YOUR_CHAT_ID = int(os.getenv(''YOUR_CHAT_ID''))
 # 📡 Telegram бот с таймаутом
 request = Request(connect_timeout=5, read_timeout=10)
 bot = Bot(token=BOT_TOKEN, request=request)
