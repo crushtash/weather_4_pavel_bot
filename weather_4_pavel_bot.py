@@ -16,7 +16,7 @@ LONGITUDE = 37.6218
 
 # chat_id — ВСТАВЬ СВОИ
 PASHAS_CHAT_ID = int(os.getenv('PASHAS_CHAT_ID'))
-YOUR_CHAT_ID = int(os.getenv(''YOUR_CHAT_ID''))
+YOUR_CHAT_ID = int(os.getenv('YOUR_CHAT_ID'))
 # 📡 Telegram бот с таймаутом
 request = Request(connect_timeout=5, read_timeout=10)
 bot = Bot(token=BOT_TOKEN, request=request)
